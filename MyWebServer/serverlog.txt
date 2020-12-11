@@ -1,0 +1,500 @@
+******************************************************************************************************************************************************************************
+-> When user on browser hits localhost:2540 after starting the server(we display the directory)
+
+OUTPUT:
+// It prints more than just this, which includes calling to gif's file. I have edited it for simplicity, but I have added the whole response at the end.
+Anam Shaikh Inet server 1.8 starting up, listening at port 2540
+
+Anam's Server is printing the directory: /
+
+ <html><head><h1>Index of "/home/anam/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="cat.html" >cat.html</a>			<a>05/03/2020 19:03:22</a>			<a>122 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="MyWebServer.class" >MyWebServer.class</a>			<a>05/03/2020 19:07:17</a>			<a>978 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="serverlog.txt" >serverlog.txt</a>			<a>05/03/2020 19:10:22</a>			<a>4346 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="MyWebServer.java" >MyWebServer.java</a>			<a>05/03/2020 19:07:02</a>			<a>14604 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="http-streams.txt" >http-streams.txt</a>		<a>05/03/2020 17:45:14</a>			<a>2722 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="dog.txt" >dog.txt</a>			<a>05/03/2020 18:01:04</a>			<a>22 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="gif/">/gif</a>		<a>05/03/2020 19:05:18</a>			<a>4096 bytes</a>			<a>Description</a> </br> <img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="addnum.html" >addnum.html</a>			<a>05/03/2020 17:02:16</a>			<a>630 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="Worker.class" >Worker.class</a>			<a>05/03/2020 19:07:17</a>			<a>7706 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="checklist-mywebserver.html" >checklist-mywebserver.html</a>			<a>05/03/2020 17:15:02</a>			<a>5541 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="contentType.class" >contentType.class</a>			<a>05/03/2020 19:07:17</a>			<a>1238 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="sub-a/">/sub-a</a>			<a>05/03/2020 17:50:12</a>			<a>4096 bytes</a>		<a>Description</a> </br> GET /back.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+-> When user access localhost:2540/dog.txt
+
+REQUEST: 
+GET /dog.txt HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Upgrade-Insecure-Requests: 1
+----------------------------------------------------------------------------------------------------
+RESPONSE:
+Anam's server is sending response to request /dog.txt
+
+HTTP/1.0 200 OK 
+Content Type:txtFile
+Content Length:0
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+-> When user access localhost:2540/cat.html 
+
+REQUEST:
+
+GET /cat.html HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Upgrade-Insecure-Requests: 1
+
+
+--------------------------------------------------------------------------------------------------
+RESPONSE:
+
+Anam's server is sending response to request /cat.html
+
+HTTP/1.0 200 OK 
+Content Type:htmlFile
+Content Length:0
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-> When user access http://localhost:2540/~ (insecure request)
+Request: 
+HTTP/1.0 403 You don't have permission to access the requested URL
+GET /~ HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Upgrade-Insecure-Requests: 1
+
+RESPONSE:
+HTTP/1.0 403 You don't have permission to access the requested URL
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-> When user access http://localhost:2540/addnum.html from Mozilla browser
+
+REQUEST:
+GET /addnum.html HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Upgrade-Insecure-Requests: 1
+
+------------------------------------------------------------------------------------------------------
+RESPONSE: 
+
+Anam's server is sending response to request /addnum.html
+
+HTTP/1.0 200 OK 
+Content Type:htmlFile
+Content Length:0
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-> Wen User inputs name as anam and numbers as 4 and 5 to be added
+
+RESPONSE: Anam's server is sending response to request /cgi/addnums.fake-cgi?person=anam&num1=4&num2=5
+Content Type:plain
+Content Length:32
+
+Display on Browser:
+
+Hi anam, the sum of 4 and 5 is 9
+
+ HTTP/1.0 200 OK Content-Type: plain
+Date: Sun May 03 19:27:33 CDT 2020
+Server: Anam's Server 1.0
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+***Scenario***: When User browses from home directory to sub-a/sub-b/cat.html
+// It also prints GIFS that each DIR is looking. I have edited here for simplicity. The whole response is after these logs
+-> When User select sub-a directory from browser
+
+OUTPUT: 
+
+Anam's Server is printing the directory: /sub-a/
+
+ <html><head><h1>Index of "/home/zeshan/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/zeshan/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="sub-b/">/sub-b</a>	<a>05/03/2020 19:34:29</a>			<a>4096 bytes</a>			<a>Description</a> </br> GET /home/zeshan/Documents/FinalWebServer/gif/dir.gif%22 HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/
+
+----------------------------------------------------------------------------------------------------
+
+-> When User select sub-a/sub-b directory from browser
+
+Anam's Server is printing the directory: /sub-a/sub-b/
+
+ <html><head><h1>Index of "/home/zeshan/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="cat.html" >cat.html</a>			<a>05/03/2020 19:34:10</a>			<a>122 bytes</a>			<a>Description</a></br>GET /sub-a/sub-b/comp.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/sub-b/
+
+-----------------------------------------------------------------------------------------------------
+
+-> Once in /sub-a/sub-b directory when user selects cat.html
+
+REQUEST:
+
+GET /sub-a/sub-b/cat.html HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/sub-b/
+
+Upgrade-Insecure-Requests: 1
+
+--------------------------------------------------------------------------
+RESPONSE:
+
+Anam's server is sending response to request /sub-a/sub-b/cat.html
+
+HTTP/1.0 200 OK 
+Content Type:htmlFile
+Content Length:0
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+The whole response 
+Anam's Server is printing the directory: /
+
+ <html><head><h1>Index of "/home/zeshan/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="cat.html" >cat.html</a>			<a>05/03/2020 19:03:22</a>			<a>122 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="MyWebServer.class" >MyWebServer.class</a>			<a>05/03/2020 20:28:00</a>			<a>978 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="serverlog.txt" >serverlog.txt</a>			<a>05/03/2020 19:32:32</a>			<a>10662 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="MyWebServer.java" >MyWebServer.java</a>			<a>05/03/2020 19:19:15</a>			<a>14602 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="http-streams.txt" >http-streams.txt</a>		<a>05/03/2020 17:45:14</a>			<a>2722 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="dog.txt" >dog.txt</a>			<a>05/03/2020 18:01:04</a>			<a>22 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="gif/">/gif</a>		<a>05/03/2020 19:05:18</a>			<a>4096 bytes</a>			<a>Description</a> </br> <img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="addnum.html" >addnum.html</a>			<a>05/03/2020 17:02:16</a>			<a>630 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="Worker.class" >Worker.class</a>			<a>05/03/2020 20:28:00</a>			<a>7656 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="checklist-mywebserver.html" >checklist-mywebserver.html</a>			<a>05/03/2020 17:15:02</a>			<a>5541 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="contentType.class" >contentType.class</a>			<a>05/03/2020 20:28:00</a>			<a>1238 bytes</a>			<a>Description</a></br><img src=/home/zeshan/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="sub-a/">/sub-a</a>			<a>05/03/2020 17:50:12</a>			<a>4096 bytes</a>		<a>Description</a> </br> GET /comp.gif HTTP/1.1
+Host: localhost:2540
+
+GET /home/zeshan/Documents/FinalWebServer/gif/dir.gif%22 HTTP/1.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+GET /back.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+GET /home/zeshan/Documents/FinalWebServer/gif/file.gif%22 HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Referer: http://localhost:2540/
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+-----------------------------------------------------------------------------------------------------------------
+Anam's Server is printing the directory: /sub-a/
+
+ <html><head><h1>Index of "/home/zeshan/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/zeshan/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="sub-b/">/sub-b</a>	<a>05/03/2020 19:34:29</a>			<a>4096 bytes</a>			<a>Description</a> </br> GET /home/zeshan/Documents/FinalWebServer/gif/dir.gif%22 HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/
+
+GET /sub-a/back.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/
+
+GET /sub-a/comp.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/
+
+-------------------------------------------------------
+
+Anam's Server is printing the directory: /sub-a/sub-b/
+
+ <html><head><h1>Index of "/home/zeshan/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/zeshan/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="cat.html" >cat.html</a>			<a>05/03/2020 19:34:10</a>			<a>122 bytes</a>			<a>Description</a></br>GET /sub-a/sub-b/comp.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/sub-b/
+
+GET /home/zeshan/Documents/FinalWebServer/gif/file.gif%22 HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/sub-b/
+
+GET /sub-a/sub-b/back.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/sub-b/
+
+-----------------------------------------------------------------------------------------------------
+GET /sub-a/sub-b/cat.html HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/sub-a/sub-b/
+
+Upgrade-Insecure-Requests: 1
+
+
+Anam's server is sending response to request /sub-a/sub-b/cat.html
+
+HTTP/1.0 200 OK 
+Content Type:htmlFile
+Content Length:0
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-> The whole response from localhost:2540/
+
+Anam Shaikh Inet server 1.8 starting up, listening at port 2540
+
+Anam's Server is printing the directory: /
+
+ <html><head><h1>Index of "/home/anam/Documents/FinalWebServer"</h1></head><pre><img src="comp.gif" alt="Icon ">	<a href="?C=N;O=D">Name</a>	<a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="back.gif" alt="[DIR]"> <a href="/">Parent Directory</a> <br><br><body><br><br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="cat.html" >cat.html</a>			<a>05/03/2020 19:03:22</a>			<a>122 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="MyWebServer.class" >MyWebServer.class</a>			<a>05/03/2020 19:16:26</a>			<a>978 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="serverlog.txt" >serverlog.txt</a>			<a>05/03/2020 19:11:36</a>			<a>4830 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="MyWebServer.java" >MyWebServer.java</a>			<a>05/03/2020 19:16:18</a>			<a>14604 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="http-streams.txt" >http-streams.txt</a>		<a>05/03/2020 17:45:14</a>			<a>2722 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="dog.txt" >dog.txt</a>			<a>05/03/2020 18:01:04</a>			<a>22 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="gif/">/gif</a>		<a>05/03/2020 19:05:18</a>			<a>4096 bytes</a>			<a>Description</a> </br> <img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="addnum.html" >addnum.html</a>			<a>05/03/2020 17:02:16</a>			<a>630 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="Worker.class" >Worker.class</a>			<a>05/03/2020 19:16:26</a>			<a>7706 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="checklist-mywebserver.html" >checklist-mywebserver.html</a>			<a>05/03/2020 17:15:02</a>			<a>5541 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/file.gif" alt="[TXT]">	<a href="contentType.class" >contentType.class</a>			<a>05/03/2020 19:16:26</a>			<a>1238 bytes</a>			<a>Description</a></br><img src=/home/anam/Documents/FinalWebServer/gif/dir.gif" alt="[DIR]">	<a href="sub-a/">/sub-a</a>			<a>05/03/2020 17:50:12</a>			<a>4096 bytes</a>		<a>Description</a> </br> GET /comp.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Cache-Control: max-age=0
+--------------------------------------------------------------------------------------------
+GET /back.gif HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Cache-Control: max-age=0
+----------------------------------------------------------------------------------------------
+GET /home/anam/Documents/FinalWebServer/gif/file.gif%22 HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Cache-Control: max-age=0
+------------------------------------------------------------------------------------------------
+GET /home/anam/Documents/FinalWebServer/gif/dir.gif%22 HTTP/1.1
+Host: localhost:2540
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+
+Accept: image/webp,*/*
+
+Accept-Language: en-US,en;q=0.5
+
+Accept-Encoding: gzip, deflate
+
+Connection: keep-alive
+
+Referer: http://localhost:2540/
+
+Cache-Control: max-age=0
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

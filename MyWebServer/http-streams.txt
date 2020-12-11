@@ -1,0 +1,77 @@
+***MyListener output:***
+
+Anam Shaikh's Port listener running at 2540.
+
+GET /dog.txt HTTP/1.1
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /cgi/addnums.fake-cgi?person=YourName&num1=4&num2=5 HTTP/1.1
+Host: localhost:2540
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+__________________________________________________________________________________________________________________________________
+
+***MyTelnetClient output:***
+
+Anam Shaikh's MyTelnet Client, 1.0.
+
+Using server: condor.depaul.edu, Port: 80
+Enter text to send to the server, <stop> to end: GET /elliott/dog.txt HTTP/1.0
+Enter text to send to the server, <stop> to end: Host: condor.depaul.edu:80
+Enter text to send to the server, <stop> to end: 
+Enter text to send to the server, <stop> to end: 
+Enter text to send to the server, <stop> to end: stop
+HTTP/1.1 400 Bad Request
+Date: Thu, 30 Apr 2020 18:26:28 GMT
+Server: Apache
+Content-Length: 226
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+</body></html>
+
+_________________________________________________________________________________________________________________________________________
+
+***Manually using Telnet client on terminal***
+
+
+anam@linux:~$ telnet condor.depaul.edu 80
+Trying 216.220.180.150...
+Connected to condor.depaul.edu.
+Escape character is '^]'.
+GET /elliott/dog.txt HTTP/1.0
+Host: condor.depaul.edu:80
+
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 30 Apr 2020 05:21:26 GMT
+Server: Apache
+Location: https://condor.depaul.edu:80/elliott/dog.txt
+Content-Length: 252
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://condor.depaul.edu:80/elliott/dog.txt">here</a>.</p>
+</body></html>
+Connection closed by foreign host.
