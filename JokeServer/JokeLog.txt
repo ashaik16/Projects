@@ -1,0 +1,351 @@
+Senario 1:
+ Step 1: JokeServer Started
+ Step 2: JokeClient Started --> inserted username as anam --> hit enter 8 times, the randomizing works
+ Step 3: JokeClientAdmin changes the mode to proverb.
+ Step 4: Server is been notified
+ Step 5: Joke Client hits enter and gets proverbs
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+JokeServer Output:
+
+Running Admin Server Mode
+Anam's Joke Server running on 4545
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+JokeClient Output:
+
+Anam's  Joke client 
+
+Using Server localhost, port 0
+
+###############################
+########### Welcome ###########
+###############################
+
+Please enter your username
+anam
+Hello anam 
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JA anam: If I get quarantined for two weeks with my wife and I die. I can assure you it was not the virus that killed me.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JB anam: Since everybody has now started washing their hands, the peanuts at the bar have lost their taste.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JC anam: I sneezed in the bank today, it was the most attention I have received from the staff in the last 10 years.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JD anam: Mexico is asking Trump to hurry up and build the wall NOW
+// here it is randomized list to {A,D,B,C}
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JA anam: If I get quarantined for two weeks with my wife and I die. I can assure you it was not the virus that killed me.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JD anam: Mexico is asking Trump to hurry up and build the wall NOW
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JB anam: Since everybody has now started washing their hands, the peanuts at the bar have lost their taste.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JC anam: I sneezed in the bank today, it was the most attention I have received from the staff in the last 10 years.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JB anam: Since everybody has now started washing their hands, the peanuts at the bar have lost their taste.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PA anam: Some people are worth melting for --Frozen
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PB anam: Hope is a good thing, maybe the best of things, and no good thing ever dies. ---Andy Dufresne, The Shawshank Redemption
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PC anam: All great things happen between method and madness --- Shakespheare, Hamlet
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+JokeClientAdmin Output: 
+
+
+###############################
+######### Welcome Admin #########
+###############################
+
+
+###############################  ADMIN MENU    ################################
+Press 1: Joke Mode
+Press 2: Proverb Mode
+Press 3: Shutdown Mode
+Press 4: To Change Server To Secodary
+Press 5: Quit
+################################################################################
+2
+Completed: Request of mode change to Proverb
+
+###############################  ADMIN MENU    ################################
+Press 1: Joke Mode
+Press 2: Proverb Mode
+Press 3: Shutdown Mode
+Press 4: To Change Server To Secodary
+Press 5: Quit
+################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Senario 2:
+ Step 1: Proverb counter is 2 and expects PD
+ Step 2: JokeClientAdmin changes the mode to joke
+ Step 3: Server is been notified
+ Step 4: Joke Client hits enter and gets jokes
+ Step 5: Mode switched back to Proverb
+ Step 6: Client gets PD
+
+JokeClient Output:
+Anam's  Joke client 
+
+Using Server localhost, port 0
+
+###############################
+########### Welcome ###########
+###############################
+
+Please enter your username
+anam
+Hello anam 
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JA anam: If I get quarantined for two weeks with my wife and I die. I can assure you it was not the virus that killed me.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JB anam: Since everybody has now started washing their hands, the peanuts at the bar have lost their taste.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JC anam: I sneezed in the bank today, it was the most attention I have received from the staff in the last 10 years.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JD anam: Mexico is asking Trump to hurry up and build the wall NOW
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JA anam: If I get quarantined for two weeks with my wife and I die. I can assure you it was not the virus that killed me.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JD anam: Mexico is asking Trump to hurry up and build the wall NOW
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JB anam: Since everybody has now started washing their hands, the peanuts at the bar have lost their taste.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JC anam: I sneezed in the bank today, it was the most attention I have received from the staff in the last 10 years.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JB anam: Since everybody has now started washing their hands, the peanuts at the bar have lost their taste.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PA anam: Some people are worth melting for --Frozen
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PB anam: Hope is a good thing, maybe the best of things, and no good thing ever dies. ---Andy Dufresne, The Shawshank Redemption
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PC anam: All great things happen between method and madness --- Shakespheare, Hamlet
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JD anam: Mexico is asking Trump to hurry up and build the wall NOW
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JC anam: I sneezed in the bank today, it was the most attention I have received from the staff in the last 10 years.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+JA anam: If I get quarantined for two weeks with my wife and I die. I can assure you it was not the virus that killed me.
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+PD anam: When you are backed against the wall, break the goddamn thing down -- Harvey Specter, Suits
+
+###############################     MENU     ################################
+Press Enter to proceed get a Joke or Proverb
+Press q : Quit
+################################################################################
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+JokeServer Output:
+Running Admin Server Mode
+Anam's Joke Server running on 4545
+Admin changed mode to Proverb
+Admin changed mode to Joke
+Admin changed mode to Proverb
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+JokeClientAdmin Output:
+
+
+###############################
+######### Welcome Admin #########
+###############################
+
+
+###############################  ADMIN MENU    ################################
+Press 1: Joke Mode
+Press 2: Proverb Mode
+Press 3: Shutdown Mode
+Press 4: To Change Server To Secodary
+Press 5: Quit
+################################################################################
+2
+Completed: Request of mode change to Proverb
+
+###############################  ADMIN MENU    ################################
+Press 1: Joke Mode
+Press 2: Proverb Mode
+Press 3: Shutdown Mode
+Press 4: To Change Server To Secodary
+Press 5: Quit
+################################################################################
+1
+Completed: Request of mode change to Joke
+
+###############################  ADMIN MENU    ################################
+Press 1: Joke Mode
+Press 2: Proverb Mode
+Press 3: Shutdown Mode
+Press 4: To Change Server To Secodary
+Press 5: Quit
+################################################################################
+2
+Completed: Request of mode change to Proverb
+
+###############################  ADMIN MENU    ################################
+Press 1: Joke Mode
+Press 2: Proverb Mode
+Press 3: Shutdown Mode
+Press 4: To Change Server To Secodary
+Press 5: Quit
+################################################################################
